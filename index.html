@@ -1,20 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Counter</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Economics</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
-  <div class="counter-container">
-    <h1>Simple Counter</h1>
-    <p id="counter">0</p>
-    <button id="increaseBtn">Increase</button>
-    <button id="decreaseBtn">Decrease</button>
-  </div>
+    <!-- Video Lecture Section -->
+    <section id="lecture">
+        <h1>Video Lecture: Introduction to Economics</h1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/0BkcAMtVJ2c?si=objpZughy9vN3KsZ" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Quiz: Introduction to Economics</h2>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. What is the basic definition of economics?</p>
+                <input type="radio" name="q1" value="A"> A. The study of how society manages its unlimited resources<br>
+                <input type="radio" name="q1" value="B"> B. The study of how society manages its scarce resources<br>
+                <input type="radio" name="q1" value="C"> C. The study of money and finance<br>
+                <span class="feedback" id="feedback1"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. Which of the following best describes Microeconomics?</p>
+                <input type="radio" name="q2" value="A"> A. The study of the overall economy<br>
+                <input type="radio" name="q2" value="B"> B. The study of individual consumers and firms<br>
+                <input type="radio" name="q2" value="C"> C. The study of international trade<br>
+                <span class="feedback" id="feedback2"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>3. Macroeconomics focuses on:</p>
+                <input type="radio" name="q3" value="A"> A. Individual business decisions<br>
+                <input type="radio" name="q3" value="B"> B. National and global economic performance<br>
+                <input type="radio" name="q3" value="C"> C. Pricing of goods and services<br>
+                <span class="feedback" id="feedback3"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>4. Which of the following is an example of a Microeconomic issue?</p>
+                <input type="radio" name="q4" value="A"> A. Inflation rate in the country<br>
+                <input type="radio" name="q4" value="B"> B. A company deciding how much to produce<br>
+                <input type="radio" name="q4" value="C"> C. National GDP growth<br>
+                <span class="feedback" id="feedback4"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>5. Which of the following is a Macroeconomic issue?</p>
+                <input type="radio" name="q5" value="A"> A. A family's choice to spend or save money<br>
+                <input type="radio" name="q5" value="B"> B. Unemployment rate of a country<br>
+                <input type="radio" name="q5" value="C"> C. A business setting its price strategy<br>
+                <span class="feedback" id="feedback5"></span>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+    <!-- Assignment Section -->
+    <section id="assignment">
+        <h2>Assignment</h2>
+        <p><strong>Assignment Question:</strong></p>
+        <p>Define Economics and explain the differences between Microeconomics and Macroeconomics. Provide examples to illustrate each field.</p>
+        <p>Please submit your assignment by sending an email to: <a href="mailto: econmadeeasy101@gmail.com">econmadeeasy101@gmail.com</a></p>
+        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
+        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <h2>PLEASE DONATE</h2>
+        <p>Account Number: 2032202001590</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
+        <p>Wave Mobile: 3709558</p>
+        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
+    </section>
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
 </body>
 </html>
