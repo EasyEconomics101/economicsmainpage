@@ -3,85 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macroeconomics: National Income & GDP (ECO 120)</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <title>Economics Genius Academy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="mobile-notice" id="mobileNotice">
+        📱 For the best experience, please rotate your device to landscape mode.
+        <button class="notice-close" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+    <nav class="navbar">
+        <div class="logo">Economics Genius Academy</div>
+        <button class="hamburger" id="hamburgerMenu">&#9776;</button>
+        <div class="nav-links" id="navLinks">
+            <a href="https://videolectures101.github.io/economicsvideolecture/" target="_blank">Video Lectures</a>
+            <a href="https://economicsquiz101.github.io/economicsquiz/" target="_blank">Test Your Knowledge</a>
+            <a href="#" class="resources-link">
+                <span>Downloadable Resources</span>
+                <i class="lock-icon">🔒</i>
+                <div class="upgrade-tooltip">Upgrade to Pro to unlock</div>
+            </a>
+            <a href="https://economicsquiz101.github.io/PracticeQuestions/" target="_blank">Practice Questions</a>
+        </div>
+    </nav>
 
-    <!-- Video Lecture Section -->
-    <section id="lecture">
-        <h1>Video Lecture: Macroeconomics - National Income & GDP (ECO 120)</h1>
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/Rgr1vRjxzFg?si=XOPSPfBm2lRWsbcz" 
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    </section>
+    <div class="upgrade-banner">
+        <a href="https://pricingpage101.github.io/pricings/" class="upgrade-link">
+            <span class="pro-button">🌟 Upgrade to Pro! 🌟</span>
+        </a>
+        <a href="https://pricingpage101.github.io/donation/" class="donate-link">
+            <span class="donate-button">💝 Donate Here! 💝</span>
+        </a>
+    </div>
 
-    <!-- Quiz Section -->
-    <section id="quiz">
-        <h2>Quiz: Macroeconomics - National Income & GDP (ECO 120)</h2>
-        <form id="quizForm">
-            <div class="quiz-question">
-                <p>1. Which of the following is a component of GDP?</p>
-                <input type="radio" name="q1" value="A"> A. Investment<br>
-                <input type="radio" name="q1" value="B"> B. National debt<br>
-                <input type="radio" name="q1" value="C"> C. Income inequality<br>
-                <span class="feedback" id="feedback1"></span>
+    <div class="container">
+        <h1>Welcome to Economics Genius Academy</h1>
+        <p>Your comprehensive online economics learning platform. Master microeconomics, macroeconomics, and global finance with expert-curated content.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h2>Personalized Learning</h2>
+                <p>Customizable study paths to master economic concepts at any level.</p>
             </div>
-
-            <div class="quiz-question">
-                <p>2. What does GDP stand for?</p>
-                <input type="radio" name="q2" value="A"> A. Gross Domestic Product<br>
-                <input type="radio" name="q2" value="B"> B. General Domestic Policy<br>
-                <input type="radio" name="q2" value="C"> C. Government Development Program<br>
-                <span class="feedback" id="feedback2"></span>
+            <div class="feature-box">
+                <h2>Expert Tutors</h2>
+                <p>Learn from experienced economists and educators.</p>
             </div>
-
-            <div class="quiz-question">
-                <p>3. How is GDP related to a country's economic health?</p>
-                <input type="radio" name="q3" value="A"> A. It is unrelated to economic health<br>
-                <input type="radio" name="q3" value="B"> B. Higher GDP indicates better economic health<br>
-                <input type="radio" name="q3" value="C"> C. Lower GDP is a sign of economic growth<br>
-                <span class="feedback" id="feedback3"></span>
+            <div class="feature-box">
+                <h2>Interactive Content</h2>
+                <p>Engaging video lectures, quizzes, and downloadable resources.</p>
             </div>
+        </div>
 
-            <div class="quiz-question">
-                <p>4. What are the major methods of calculating national income?</p>
-                <input type="radio" name="q4" value="A"> A. Output, expenditure, and income methods<br>
-                <input type="radio" name="q4" value="B"> B. Output, expenditure, and inflation methods<br>
-                <input type="radio" name="q4" value="C"> C. Output, taxation, and income methods<br>
-                <span class="feedback" id="feedback4"></span>
+        <section id="donate" class="donate-section">
+            <h2 class="donation-title">Support Free Economics Education</h2>
+            <div class="donation-image-container">
+                <img src="https://example.com/economics-education.jpg"
+                     alt="Students in an economics lecture" 
+                     class="donation-image"
+                     loading="lazy">
             </div>
+            <p class="donation-description">
+                Help us provide free resources for economics education worldwide. Donate today to empower future policymakers and financial leaders!
+            </p>
+        </section>
+    </div>
 
-            <div class="quiz-question">
-                <p>5. Which of the following is an example of a country with a high GDP?</p>
-                <input type="radio" name="q5" value="A"> A. United States<br>
-                <input type="radio" name="q5" value="B"> B. Zimbabwe<br>
-                <input type="radio" name="q5" value="C"> C. North Korea<br>
-                <span class="feedback" id="feedback5"></span>
+    <div class="telegram-popup" id="telegramPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="popup-header">
+                <img src="https://logos-world.net/wp-content/uploads/2021/03/Telegram-Symbol.png" 
+                     alt="Telegram Logo" 
+                     class="telegram-logo">
+                <h2>🚨 Limited Time Access! 🚨</h2>
             </div>
+            <div class="popup-body">
+                <p class="urgent-msg">⚠️ Our Telegram group is closing in less than 24 hours!</p>
+                <p>Join our exclusive Telegram channel to access:</p>
+                <ul>
+                    <li>📚 Free Video Lectures</li>
+                    <li>📝 Study Materials</li>
+                    <li>👥 Community Support</li>
+                    <li>🎯 Practice Questions</li>
+                </ul>
+                <a href="https://t.me/economicshub101" class="join-btn" target="_blank">
+                    Join Now Before It's Too Late!
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Economics Genius Academy. All Rights Reserved.</p>
+    </footer>
 
-            <button type="submit">Submit Quiz</button>
-        </form>
-    </section>
-
-    <!-- Assignment Section -->
-    <section id="assignment">
-        <h2>Assignment</h2>
-        <p><strong>Assignment Question:</strong></p>
-        <p>Write a report explaining how national income is calculated. Describe the different components of GDP and discuss how it is used as an indicator of economic health. Provide an example of a country with a high GDP and explain what it implies about the country's economy.</p>
-        <p>Please submit your assignment by sending an email to: <a href="mailto: econmadeeasy101@gmail.com"> econmadeeasy101@gmail.com </a></p>
-        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
-        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
-    </section>
-
-    <!-- Donation Section -->
-    <section id="donation">
-        <h2>PLEASE DONATE</h2>
-        <p>Account Number: 2032202001590</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
-        <p>Wave Mobile: 3709558</p>
-        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
-    </section>
-
-    <script src="script.js"></script> <!-- Link to external JS file -->
+    <script src="script.js"></script>
 </body>
 </html>
